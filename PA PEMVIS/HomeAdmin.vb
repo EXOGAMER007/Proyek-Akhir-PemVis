@@ -75,17 +75,17 @@ Public Class HomeAdmin
 
     Private Sub DaftarUserToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DaftarUserToolStripMenuItem.Click
         DaftarUser.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub DaftarPinjamanToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DaftarPinjamanToolStripMenuItem.Click
         DaftarPeminjaman.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub KeluarToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles KeluarToolStripMenuItem.Click
         FMenu.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub HomeAdmin_Activated(sender As Object, e As EventArgs) Handles MyBase.Activated
