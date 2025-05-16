@@ -1,4 +1,4 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class Riwayat
     Inherits System.Windows.Forms.Form
 
@@ -37,6 +37,7 @@ Partial Class Riwayat
         Label2 = New Label()
         LbID2 = New Label()
         Label3 = New Label()
+        LbID = New Label()
         CType(DataGridView1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
@@ -219,6 +220,17 @@ Partial Class Riwayat
         Label3.TabIndex = 50
         Label3.Text = "SihCepat"
         ' 
+        ' LbID
+        ' 
+        LbID.AutoSize = True
+        LbID.BackColor = Color.Transparent
+        LbID.Font = New Font("Swis721 Cn BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        LbID.ForeColor = Color.SaddleBrown
+        LbID.Location = New Point(104, 342)
+        LbID.Name = "LbID"
+        LbID.Size = New Size(0, 22)
+        LbID.TabIndex = 51
+        ' 
         ' Riwayat
         ' 
         AutoScaleDimensions = New SizeF(7F, 17F)
@@ -227,6 +239,7 @@ Partial Class Riwayat
         BackgroundImage = My.Resources.Resources.Solusi_Keuangan_Cepat_dan_Aman__20_
         BackgroundImageLayout = ImageLayout.Zoom
         ClientSize = New Size(763, 560)
+        Controls.Add(LbID)
         Controls.Add(Label3)
         Controls.Add(LbID2)
         Controls.Add(Label2)
@@ -264,4 +277,5 @@ Partial Class Riwayat
     Friend WithEvents Label2 As Label
     Friend WithEvents LbID2 As Label
     Friend WithEvents Label3 As Label
+    Friend WithEvents LbID As Label
 End Class
