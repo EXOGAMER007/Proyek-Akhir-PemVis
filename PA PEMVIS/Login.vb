@@ -1,25 +1,41 @@
-﻿Imports System.Windows.Forms.VisualStyles.VisualStyleElement
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 Imports MySql.Data.MySqlClient
 
 Public Class Login
+    Dim x, y As Integer
+    Dim newpoint As New System.Drawing.Point
+
+    Private Sub form_input_MouseDown(sender As Object, e As MouseEventArgs) Handles Me.MouseDown
+        x = Control.MousePosition.X - Me.Location.X
+        y = Control.MousePosition.Y - Me.Location.Y
+    End Sub
+
+    Private Sub form_input_MouseMove(sender As Object, e As MouseEventArgs) Handles Me.MouseMove
+        If e.Button = DaftarUser.MouseButtons.Left Then
+            newpoint = Control.MousePosition
+            newpoint.X -= (x)
+            newpoint.Y -= (y)
+            Me.Location = newpoint
+        End If
+    End Sub
     Private Sub BtnLogin_Click(sender As Object, e As EventArgs) Handles BtnLogin.Click
         If PeriksaKosongFormLogin() Then
             Try
-                If GlobalVariables.AkunAdmin(0, 0) = CStr(63) And txtPassword.Text = "daffa" Then
-                    MessageBox.Show("Login berhasil! Selamat datang, Admin")
-                    Me.Hide()
+                If GlobalVariables.AkunAdmin(0, 0) = CStr(83110940598) And txtPassword.Text = "daffa" Then
+                    MessageBox.Show("Login berhasil! Selamat datang, Daffa")
+                    Me.Close()
                     GlobalVariables.Admin = txtUsername.Text
                     HomeAdmin.Show()
                     KosongkanForm()
-                ElseIf GlobalVariables.AkunAdmin(1, 0) = CStr(59) And txtPassword.Text = "ayya" Then
-                    MessageBox.Show("Login berhasil! Selamat datang, Admin")
-                    Me.Hide()
+                ElseIf GlobalVariables.AkunAdmin(1, 0) = CStr(81346531543) And txtPassword.Text = "ayya" Then
+                    MessageBox.Show("Login berhasil! Selamat datang, Ayya")
+                    Me.Close()
                     GlobalVariables.Admin = txtUsername.Text
                     HomeAdmin.Show()
                     KosongkanForm()
-                ElseIf GlobalVariables.AkunAdmin(2, 0) = CStr(50) And txtPassword.Text = "rehan" Then
-                    MessageBox.Show("Login berhasil! Selamat datang, Admin")
-                    Me.Hide()
+                ElseIf GlobalVariables.AkunAdmin(2, 0) = CStr(81244746892) And txtPassword.Text = "rehan" Then
+                    MessageBox.Show("Login berhasil! Selamat datang, Rayhan")
+                    Me.Close()
                     GlobalVariables.Admin = txtUsername.Text
                     HomeAdmin.Show()
                     KosongkanForm()
@@ -37,7 +53,7 @@ Public Class Login
 
                         MessageBox.Show("Login berhasil! Selamat datang, " & GlobalVariables.Username)
 
-                        Me.Hide()
+                        Me.Close()
                         HomeUser.Show()
                         KosongkanForm()
                     Else
@@ -49,7 +65,6 @@ Public Class Login
 
             Catch ex As Exception
                 MessageBox.Show("Terjadi kesalahan saat login: " & ex.Message)
-                ' Tambahkan logging kesalahan di sini jika diperlukan
             Finally
                 If Module1.CONN.State = ConnectionState.Open Then
                     Module1.CONN.Close()
@@ -64,7 +79,7 @@ Public Class Login
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles BtnKembali.Click
-        Me.Hide()
+        Me.Close()
         FMenu.Show()
     End Sub
 
@@ -104,11 +119,11 @@ Public Class Login
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         txtPassword.PasswordChar = "*"
         LihatPass.BackgroundImage = My.Resources.Desain_tanpa_judul__11_
-        GlobalVariables.AkunAdmin(0, 0) = "63"
+        GlobalVariables.AkunAdmin(0, 0) = "83110940598"
         GlobalVariables.AkunAdmin(0, 1) = "daffa"
-        GlobalVariables.AkunAdmin(1, 0) = "59"
+        GlobalVariables.AkunAdmin(1, 0) = "81346531543"
         GlobalVariables.AkunAdmin(1, 1) = "ayya"
-        GlobalVariables.AkunAdmin(2, 0) = "50"
+        GlobalVariables.AkunAdmin(2, 0) = "81244746892"
         GlobalVariables.AkunAdmin(2, 1) = "rehan"
     End Sub
 
