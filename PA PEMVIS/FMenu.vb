@@ -15,7 +15,6 @@ Public Module Module1
         Try
             Dim STR As String =
             "server=localhost;userid=root;password=;database=ProyekAkhirPemVis"
-            'Ganti nama database sesuaikan dengan nama database kalian
             CONN = New MySqlConnection(STR)
             If CONN.State = ConnectionState.Closed Then
                 CONN.Open()
@@ -61,12 +60,12 @@ Public Class FMenu
 
     Private Sub BtnDaftar_Click(sender As Object, e As EventArgs) Handles BtnDaftar.Click
         DaftarAkun.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub BtnLogin_Click(sender As Object, e As EventArgs) Handles BtnLogin.Click
         Login.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub FMenu_Load(sender As Object, e As EventArgs) Handles MyBase.Load
