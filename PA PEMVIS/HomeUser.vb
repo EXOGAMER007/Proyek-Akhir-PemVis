@@ -79,24 +79,6 @@ Public Class HomeUser
         End If
     End Sub
 
-    'Private Sub Todolistbox_ValueMemberChanged(sender As Object, e As EventArgs) Handles Todolistbox.ValueMemberChanged
-    '    Try
-    '        Module1.koneksi()
-
-    '        Module1.STR = "INSERT INTO Catatan (ceklist) VALUES (@cek)"
-    '        Module1.CMD = New MySqlCommand(Module1.STR, Module1.CONN)
-
-    '        Module1.CMD.Parameters.AddWithValue("@catatan", Todolistbox.CheckedItems)
-
-    '        Module1.CMD.ExecuteNonQuery()
-
-    '    Catch ex As Exception
-    '        If Module1.CONN.State = ConnectionState.Open Then
-    '            Module1.CONN.Close()
-    '        End If
-    '    End Try
-    'End Sub
-
     Private Sub Todolistbox_ItemCheck(sender As Object, e As ItemCheckEventArgs) Handles Todolistbox.ItemCheck
         Try
             Module1.koneksi()
@@ -164,22 +146,18 @@ Public Class HomeUser
 
     Private Sub BtnLogout_Click(sender As Object, e As EventArgs) Handles BtnLogout.Click
         FMenu.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub BtnAjukan_Click(sender As Object, e As EventArgs) Handles BtnAjukan.Click
         AjukanPijaman.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub BtnRiwayat_Click(sender As Object, e As EventArgs) Handles BtnRiwayat.Click
         Riwayat.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
-
-    'Private Sub HomeUser_Load(sender As Object, e As EventArgs) Handles Me.Load
-    '    UserName.Text = GlobalVariables.Username
-    'End Sub
 
     Private Function Periksakosong()
         If txtList.Text = "" Then
