@@ -93,11 +93,11 @@ Public Class Riwayat
         Dim stat As String = row.Cells("Status").Value.ToString().ToLower()
 
         If stat = "pending" Then
-            LbID2.Text = row.Cells("ID").Value.ToString()
+            LbID.Text = row.Cells("ID").Value.ToString()
             txtNominal.Text = row.Cells("JumlahPinjaman").Value.ToString()
             cbCicilan.Text = row.Cells("Cicilan").Value.ToString()
         Else
-            LbID2.Text = ""
+            LbID.Text = ""
             txtNominal.Clear()
             cbCicilan.Text = ""
         End If
@@ -136,7 +136,7 @@ Public Class Riwayat
     End Sub
 
     Private Sub BtnBatalkanPerubahan_Click(sender As Object, e As EventArgs) Handles BtnBatalkanPerubahan.Click
-        LbID2.Text = ""
+        LbID.Text = ""
         txtNominal.Clear()
         cbCicilan.Text = ""
     End Sub
@@ -178,7 +178,7 @@ Public Class Riwayat
 
     Private Sub BtnKembali_Click(sender As Object, e As EventArgs) Handles BtnKembali.Click
         HomeUser.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
 End Class
