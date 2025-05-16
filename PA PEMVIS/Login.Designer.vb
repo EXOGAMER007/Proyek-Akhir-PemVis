@@ -48,17 +48,17 @@ Partial Class Login
         ' 
         ' Button1
         ' 
-        Button1.BackColor = Color.Transparent
-        Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), Image)
-        Button1.BackgroundImageLayout = ImageLayout.Zoom
-        Button1.FlatAppearance.BorderSize = 0
-        Button1.FlatStyle = FlatStyle.Flat
-        Button1.ForeColor = Color.Transparent
-        Button1.Location = New Point(10, 6)
+        BtnKembali.BackColor = Color.Transparent
+        BtnKembali.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), Image)
+        BtnKembali.BackgroundImageLayout = ImageLayout.Zoom
+        BtnKembali.FlatAppearance.BorderSize = 0
+        BtnKembali.FlatStyle = FlatStyle.Flat
+        BtnKembali.ForeColor = Color.Transparent
+        BtnKembali.Location = New Point(10, 6)
         BtnKembali.Name = "BtnKembali"
-        Button1.Size = New Size(49, 44)
-        Button1.TabIndex = 13
-        Button1.UseVisualStyleBackColor = False
+        BtnKembali.Size = New Size(49, 44)
+        BtnKembali.TabIndex = 13
+        BtnKembali.UseVisualStyleBackColor = False
         ' 
         ' BtnLogin
         ' 
