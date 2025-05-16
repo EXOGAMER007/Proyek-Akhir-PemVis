@@ -22,11 +22,6 @@ Public Class DaftarPeminjaman
         End If
     End Sub
 
-    Private Sub DaftarPeminjaman_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Encoding.RegisterProvider(CodePagesEncodingProvider.Instance)
-        TampilkanData_peminjaman()
-    End Sub
-
     Sub TampilkanData_peminjaman()
         Try
             DataGridView1.Columns.Clear()
@@ -65,7 +60,7 @@ Public Class DaftarPeminjaman
                 .Columns("NomorHP_Pengguna").HeaderText = "Nomor HP"
                 .Columns("Status").HeaderText = "Status Peminjaman"
                 .Columns("tanggalACCEPT").HeaderText = "Terakhir Diupdate"
-                .Columns("idPinjaman").Width = 70
+                .Columns("idPinjaman").Width = 40
                 .Columns("tanggalACCEPT").Width = 150
                 .Columns("tanggalACCEPT").DefaultCellStyle.Format = "dd/MM/yyyy"
             End With
@@ -115,7 +110,7 @@ Public Class DaftarPeminjaman
 
     Private Sub BtnKembali_Click(sender As Object, e As EventArgs) Handles BtnKembali.Click
         HomeAdmin.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
     Private Sub DataGridView1_CellFormatting(sender As Object, e As DataGridViewCellFormattingEventArgs) Handles DataGridView1.CellFormatting
         If DataGridView1.Columns(e.ColumnIndex).Name = "Status" AndAlso e.Value IsNot Nothing Then
