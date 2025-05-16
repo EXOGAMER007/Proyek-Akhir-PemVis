@@ -52,7 +52,7 @@ Public Class AjukanPijaman
             Dim result As Integer = insertCmd.ExecuteNonQuery()
             If result > 0 Then
                 MessageBox.Show("Pengajuan Berhasil, Mohon Ditunggu.")
-                Me.Hide()
+                Me.Close()
                 HomeUser.Show()
             Else
                 MessageBox.Show("Pengajuan Gagal gagal.")
@@ -69,6 +69,6 @@ Public Class AjukanPijaman
 
     Private Sub BtnBatal_Click(sender As Object, e As EventArgs) Handles BtnBatal.Click
         HomeUser.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 End Class
