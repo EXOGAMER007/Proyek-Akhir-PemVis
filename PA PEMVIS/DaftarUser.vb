@@ -109,7 +109,7 @@ Public Class DaftarUser
 
     Private Sub BtnKembali_Click(sender As Object, e As EventArgs) Handles BtnKembali.Click
         HomeAdmin.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
 End Class
