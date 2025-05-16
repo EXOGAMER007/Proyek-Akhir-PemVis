@@ -40,7 +40,7 @@ Public Class AjukanPijaman
                 End If
             Next
 
-            Dim insertQuery As String = "INSERT INTO pinjaman (Nama, Alamat, Nominal, cicilan, NomorHP_Pengguna) VALUES (@unamep, @al, @nom, @ci, @nop)"
+            Dim insertQuery As String = "INSERT INTO Pinjaman (Nama, Alamat, Nominal, cicilan, NomorHP_Pengguna) VALUES (@unamep, @al, @nom, @ci, @nop)"
 
             Dim insertCmd As New MySqlCommand(insertQuery, Module1.CONN)
             insertCmd.Parameters.AddWithValue("@unamep", GlobalVariables.Username)

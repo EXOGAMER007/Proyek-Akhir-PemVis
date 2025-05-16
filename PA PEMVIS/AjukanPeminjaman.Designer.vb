@@ -53,9 +53,10 @@ Partial Class AjukanPijaman
         Label1.BackColor = Color.Transparent
         Label1.Font = New Font("Swis721 BlkCn BT", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.White
-        Label1.Location = New Point(634, 515)
+        Label1.Location = New Point(634, 454)
         Label1.Name = "Label1"
-        Label1.Size = New Size(124, 35)
+        Label1.Size = New Size(134, 33)
+
         Label1.TabIndex = 1
         Label1.Text = "SihCepat"
         ' 
@@ -65,9 +66,9 @@ Partial Class AjukanPijaman
         Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Swis721 Hv BT", 24F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.SaddleBrown
-        Label2.Location = New Point(202, 78)
+        Label2.Location = New Point(202, 69)
         Label2.Name = "Label2"
-        Label2.Size = New Size(360, 39)
+        Label2.Size = New Size(323, 37)
         Label2.TabIndex = 2
         Label2.Text = "Formulir Peminjaman"
         ' 
@@ -77,9 +78,9 @@ Partial Class AjukanPijaman
         Label3.BackColor = Color.Transparent
         Label3.Font = New Font("Swis721 Cn BT", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label3.ForeColor = Color.SaddleBrown
-        Label3.Location = New Point(104, 149)
+        Label3.Location = New Point(104, 131)
         Label3.Name = "Label3"
-        Label3.Size = New Size(69, 29)
+        Label3.Size = New Size(81, 29)
         Label3.TabIndex = 19
         Label3.Text = "Nama"
         ' 
@@ -98,9 +99,9 @@ Partial Class AjukanPijaman
         Label4.BackColor = Color.Transparent
         Label4.Font = New Font("Swis721 Cn BT", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label4.ForeColor = Color.SaddleBrown
-        Label4.Location = New Point(104, 189)
+        Label4.Location = New Point(104, 167)
         Label4.Name = "Label4"
-        Label4.Size = New Size(108, 29)
+        Label4.Size = New Size(134, 29)
         Label4.TabIndex = 22
         Label4.Text = "Nomor HP"
         ' 
@@ -110,9 +111,9 @@ Partial Class AjukanPijaman
         Label5.BackColor = Color.Transparent
         Label5.Font = New Font("Swis721 Cn BT", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label5.ForeColor = Color.SaddleBrown
-        Label5.Location = New Point(104, 231)
+        Label5.Location = New Point(104, 204)
         Label5.Name = "Label5"
-        Label5.Size = New Size(81, 29)
+        Label5.Size = New Size(92, 29)
         Label5.TabIndex = 23
         Label5.Text = "Alamat"
         ' 
@@ -122,9 +123,9 @@ Partial Class AjukanPijaman
         Label6.BackColor = Color.Transparent
         Label6.Font = New Font("Swis721 Cn BT", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label6.ForeColor = Color.SaddleBrown
-        Label6.Location = New Point(104, 274)
+        Label6.Location = New Point(104, 242)
         Label6.Name = "Label6"
-        Label6.Size = New Size(189, 29)
+        Label6.Size = New Size(110, 29)
         Label6.TabIndex = 24
         Label6.Text = "Nominal Pinjaman"
         ' 
@@ -282,33 +283,45 @@ Partial Class AjukanPijaman
         Label10.AutoSize = True
         Label10.BackColor = Color.Transparent
         Label10.Font = New Font("Swis721 Cn BT", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label10.ForeColor = Color.SaddleBrown
         Label10.Location = New Point(288, 268)
         Label10.Name = "Label10"
         Label10.Size = New Size(20, 29)
         Label10.TabIndex = 34
         Label10.Text = ":"
         ' 
-        ' Label11
+        ' lbNama_pengajuan
         ' 
-        Label11.AutoSize = True
-        Label11.BackColor = Color.Transparent
-        Label11.Font = New Font("Swis721 Cn BT", 18F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label11.ForeColor = Color.SaddleBrown
-        Label11.Location = New Point(314, 189)
-        Label11.Name = "Label11"
-        Label11.Size = New Size(57, 29)
-        Label11.TabIndex = 35
-        Label11.Text = "+62"
+        lbNama_pengajuan.AutoSize = True
+        lbNama_pengajuan.BackColor = Color.Transparent
+        lbNama_pengajuan.Font = New Font("Microsoft Sans Serif", 18F, FontStyle.Bold)
+        lbNama_pengajuan.ForeColor = Color.SaddleBrown
+        lbNama_pengajuan.Location = New Point(320, 131)
+        lbNama_pengajuan.Name = "lbNama_pengajuan"
+        lbNama_pengajuan.Size = New Size(106, 29)
+        lbNama_pengajuan.TabIndex = 35
+        lbNama_pengajuan.Text = "Label11"
+        ' 
+        ' lbNomor
+        ' 
+        lbNomor.AutoSize = True
+        lbNomor.BackColor = Color.Transparent
+        lbNomor.Font = New Font("Microsoft Sans Serif", 18F, FontStyle.Bold)
+        lbNomor.ForeColor = Color.SaddleBrown
+        lbNomor.Location = New Point(320, 167)
+        lbNomor.Name = "lbNomor"
+        lbNomor.Size = New Size(92, 29)
+        lbNomor.TabIndex = 36
+        lbNomor.Text = "Nomor"
         ' 
         ' AjukanPijaman
         ' 
-        AutoScaleDimensions = New SizeF(7F, 17F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), Image)
         BackgroundImageLayout = ImageLayout.Zoom
-        ClientSize = New Size(763, 560)
-        Controls.Add(Label11)
+        ClientSize = New Size(763, 494)
+        Controls.Add(lbNomor)
+        Controls.Add(lbNama_pengajuan)
         Controls.Add(Label10)
         Controls.Add(Label9)
         Controls.Add(Label8)

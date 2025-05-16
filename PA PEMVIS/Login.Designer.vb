@@ -1,4 +1,4 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Partial Class Login
     Inherits System.Windows.Forms.Form
 
@@ -40,26 +40,25 @@ Partial Class Login
         Label1.BackColor = Color.Transparent
         Label1.Font = New Font("Swis721 BlkCn BT", 21.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.White
-        Label1.Location = New Point(629, 518)
+        Label1.Location = New Point(629, 457)
         Label1.Name = "Label1"
-        Label1.Size = New Size(124, 35)
+        Label1.Size = New Size(134, 33)
         Label1.TabIndex = 14
         Label1.Text = "SihCepat"
         ' 
-        ' BtnKembali
+        ' Button1
         ' 
-        BtnKembali.BackColor = Color.Transparent
-        BtnKembali.BackgroundImage = CType(resources.GetObject("BtnKembali.BackgroundImage"), Image)
-        BtnKembali.BackgroundImageLayout = ImageLayout.Zoom
-        BtnKembali.Cursor = Cursors.Hand
-        BtnKembali.FlatAppearance.BorderSize = 0
-        BtnKembali.FlatStyle = FlatStyle.Flat
-        BtnKembali.ForeColor = Color.Transparent
-        BtnKembali.Location = New Point(10, 7)
+        Button1.BackColor = Color.Transparent
+        Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), Image)
+        Button1.BackgroundImageLayout = ImageLayout.Zoom
+        Button1.FlatAppearance.BorderSize = 0
+        Button1.FlatStyle = FlatStyle.Flat
+        Button1.ForeColor = Color.Transparent
+        Button1.Location = New Point(10, 6)
         BtnKembali.Name = "BtnKembali"
-        BtnKembali.Size = New Size(49, 49)
-        BtnKembali.TabIndex = 13
-        BtnKembali.UseVisualStyleBackColor = False
+        Button1.Size = New Size(49, 44)
+        Button1.TabIndex = 13
+        Button1.UseVisualStyleBackColor = False
         ' 
         ' BtnLogin
         ' 
@@ -70,9 +69,9 @@ Partial Class Login
         BtnLogin.FlatStyle = FlatStyle.Flat
         BtnLogin.Font = New Font("Swis721 Cn BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         BtnLogin.ForeColor = Color.White
-        BtnLogin.Location = New Point(328, 338)
+        BtnLogin.Location = New Point(328, 298)
         BtnLogin.Name = "BtnLogin"
-        BtnLogin.Size = New Size(320, 40)
+        BtnLogin.Size = New Size(320, 35)
         BtnLogin.TabIndex = 17
         BtnLogin.Text = "Login"
         BtnLogin.UseVisualStyleBackColor = False
@@ -82,10 +81,10 @@ Partial Class Login
         txtUsername.Cursor = Cursors.IBeam
         txtUsername.Font = New Font("Swis721 Cn BT", 12.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         txtUsername.ForeColor = Color.DarkGray
-        txtUsername.Location = New Point(377, 212)
+        txtUsername.Location = New Point(328, 187)
         txtUsername.Multiline = True
         txtUsername.Name = "txtUsername"
-        txtUsername.Size = New Size(271, 32)
+        txtUsername.Size = New Size(320, 29)
         txtUsername.TabIndex = 16
         ' 
         ' txtPassword
@@ -93,10 +92,11 @@ Partial Class Login
         txtPassword.Cursor = Cursors.IBeam
         txtPassword.Font = New Font("Swis721 Cn BT", 12.75F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
         txtPassword.ForeColor = Color.DarkGray
-        txtPassword.Location = New Point(328, 285)
+        txtPassword.Location = New Point(328, 251)
         txtPassword.Multiline = True
         txtPassword.Name = "txtPassword"
-        txtPassword.Size = New Size(320, 32)
+        txtPassword.PasswordChar = "*"c
+        txtPassword.Size = New Size(320, 29)
         txtPassword.TabIndex = 15
         ' 
         ' Label2
@@ -105,9 +105,9 @@ Partial Class Login
         Label2.BackColor = Color.Transparent
         Label2.Font = New Font("Swis721 Cn BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label2.ForeColor = Color.SaddleBrown
-        Label2.Location = New Point(328, 184)
+        Label2.Location = New Point(328, 162)
         Label2.Name = "Label2"
-        Label2.Size = New Size(85, 22)
+        Label2.Size = New Size(107, 24)
         Label2.TabIndex = 18
         Label2.Text = "Nomor HP"
         ' 
@@ -117,9 +117,9 @@ Partial Class Login
         Label3.BackColor = Color.Transparent
         Label3.Font = New Font("Swis721 Cn BT", 14.25F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label3.ForeColor = Color.SaddleBrown
-        Label3.Location = New Point(328, 257)
+        Label3.Location = New Point(328, 226)
         Label3.Name = "Label3"
-        Label3.Size = New Size(81, 22)
+        Label3.Size = New Size(100, 24)
         Label3.TabIndex = 19
         Label3.Text = "Password"
         ' 
