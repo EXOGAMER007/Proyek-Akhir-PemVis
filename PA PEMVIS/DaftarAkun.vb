@@ -47,7 +47,7 @@ Public Class DaftarAkun
                     Dim result As Integer = insertCmd.ExecuteNonQuery()
                     If result > 0 Then
                         MessageBox.Show("Registrasi berhasil! Silakan login.")
-                        Me.Hide()
+                        Me.Close()
                         FMenu.Show()
                     Else
                         MessageBox.Show("Registrasi gagal.")
@@ -65,7 +65,7 @@ Public Class DaftarAkun
     End Sub
 
     Private Sub BtnKembali_Click(sender As Object, e As EventArgs) Handles BtnKembali.Click
-        Me.Hide()
+        Me.Close()
         FMenu.Show()
     End Sub
 
